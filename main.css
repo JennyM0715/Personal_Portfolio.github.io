@@ -1,0 +1,531 @@
+/*Google Fonts */
+/*https://fonts.google.com/?preview.text_type=custom*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&isplay=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman','Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 100px;
+}
+
+
+/************************************
+*
+*
+*     BANNER SECTION OF PORTFOLIO
+*
+*
+*************************************/
+.Banner{
+    position: relative;
+    min-height: 115vh;  /*100vh*/
+    background: url(banner_image.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: flex-end; /*space-between*/
+    align-items: center;
+
+}
+
+/* "Hello, I'm <br><span>Jennifer Martinez." text*/
+.Banner h2{
+    font-size: 3em;
+    color: white; /*white*/
+    font-weight: 500;
+    line-height: 1.5em;
+   
+}
+
+
+/*" Jennifer Martinez" text*/
+.Banner h2 span {
+    font-size: 1.5em; 
+    font-weight: 700;
+    
+   
+}
+
+
+/*  "I'm a Front End Web Developer" text*/
+.Banner h3{
+    font-size: 1.5em;
+    color: black; /*white*/
+    font-weight: 500;
+    
+}
+
+
+/* About me button in banner*/
+.btn{
+    position: relative;
+    /*background: #2196f3;*/
+    background: #1e90ff; /*Dodger Blue*/
+    display: inline-block;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+
+/*the naviagtion */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;  /*  padding: 40px 100px;*/
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s; /*relates to the sticky class in header tag*/
+   
+}
+
+
+/*when user scrolls down, class name "sticky" is created*/
+header.sticky{
+    background: white;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+/* "PORTFOLIO" text   */
+header .logo{
+    color: black; /*white*/
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+
+/*relates to the sticky class in header tag*/
+header.sticky .logo{
+    color: #111;  /*Very dark gray (mostly black)*/ /*But not solid black*/
+}
+
+
+/************************************
+*
+*
+*     BANNER SECTION OF PORTFOLIO
+*      NAVIGATION PART
+*       
+*
+*************************************/
+/* navigation */
+header ul{
+   position: relative; 
+   display: flex;
+}
+
+
+header ul li{
+    position: relative; 
+    list-style: none;
+    
+ }
+
+ header ul li a{
+    position: relative; 
+    display: inline-block;
+    margin: 0 15px ;
+    color: black; /*white*/
+    text-decoration: none;
+ }
+
+
+
+ /*relates to the sticky class in header tag*/
+header.sticky ul li a{
+    color: #111;
+}
+
+ /************************************
+*
+*
+*     ABOUT ME SECTION OF PORTFOLIO
+*
+*
+*************************************/
+
+ .heading{
+     width: 100%;
+     text-align: center;
+     margin-bottom: 30px;
+     color: #111;
+ }
+
+
+ /* "About Me" text*/
+ .heading h2{
+     font-weight: 600;
+     font-size: 30px;
+ }
+
+ .content{
+     display: flex;
+     justify-content: space-between;  
+ }
+
+ .contentBox{
+     padding-right: 30px;
+ }
+
+ /*  The big paragraph inside the 'contentBox' class */
+ .contentBox h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+ }
+
+
+ /*the about me image*/
+ .w50{
+     min-width: 50%;
+ }
+
+ img{
+     max-width: 100%;
+ }
+
+
+
+/******************************************
+*
+*
+*     IS/IT PROJECTS SECTION OF PORTFOLIO
+*
+*
+******************************************/
+
+ .is_it_projects{
+     background: #111;
+ }
+
+ .heading.white{
+     color: white;
+ }
+
+ .is_it_projects .content{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     flex-direction: row;
+ }
+
+ .is_it_projects .content .is_it_projectsBox{
+     padding: 40px 20px;
+     background: #222;
+     color: white;
+     max-width: 340px;
+     margin: 20px;
+     text-align: center;
+     transition: 0.5s
+ }
+
+ .is_it_projects .content .is_it_projectsBox:hover{
+     /*background: #2196f3;*/
+     background: #bf94e4;/*Bright Lavender */
+ }
+ 
+
+ .is_it_projects .content .is_it_projectsBox img{
+     max-width: 275px; /*80px*/
+     /*filter: invert(1);*/
+ }
+
+ .is_it_projects .content .is_it_projectsBox h2{
+     font-size: 20px;
+     font-weight: 600;
+ }
+
+
+
+ /******************************************
+*
+*
+*    EDUCATION SECTION OF PORTFOLIO
+*
+*
+******************************************/
+.Education .content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Education .content .EducationBox{
+    width: 25%;
+    padding: 20px;
+}
+
+.Education .content .EducationBox img{
+   max-width: 50%;
+   
+}
+
+
+
+
+/******************************************
+*
+*
+*    CONTACT SECTION OF PORTFOLIO
+*
+*
+******************************************/
+
+.Contact{
+    background: #111;
+}
+
+
+/* start of <form> css edits */
+.form{
+    min-width: 60%;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form form h3,
+.contact_info h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.form form input,
+.form form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222; /*very dark gray*/
+    color: white;
+    resize: none;
+}
+
+.form form textarea{
+    min-height: 200px;
+}
+
+.form form input::placeholder
+.form form textarea::placeholder{
+    color: #999;
+}
+
+.form form input[type="submit"]{
+    max-width: 100px;
+   /* background: #2196f3;*/ /*Vivid blue*/
+   background: #1e90ff; /*Dodger Blue*/
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* end of <form> css edits */
+
+/* start of Contact Info css edits */
+.contact_info{
+    min-width: 40%;
+
+}
+
+.contact_infoBox{
+    position: relative;
+
+}
+
+.contact_infoBox .Box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contact_infoBox .Box .icon{
+    max-width: 40px;
+    padding-top: 4px;
+    color: white;
+    display: flex;
+    justify-content: center ;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.contact_infoBox .Box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contact_infoBox .Box .text h3{
+    font-weight: 500;
+    color: #1e90ff; /*Dodger Blue*/
+    margin-bottom: 0;
+}
+
+/******************************************
+*
+*
+*    FOOTER SECTION OF PORTFOLIO
+*
+*
+******************************************/
+
+/*the footer*/
+footer .copyright{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/******************************************
+*
+*
+*    MEDIA QUERIES FOR PORTFOLIO
+*           (responsive)
+*
+*
+******************************************/
+
+@media (max-width: 991px){
+
+    header, 
+    header.sticky{
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .menu{
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    .menu.active{
+        left: 0;
+    }
+    header ul li a{
+        color: black;
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .toggle_nav{
+        width: 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle_nav.active{
+        background: url(close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+    /*header.sticky .toggle_nav{
+        filter: invert(1);
+    }*/
+
+    section{
+        padding: 100px 50px;
+    }
+    .Banner{
+        padding: 150px 50px 100px;
+    }
+
+    .Banner h2{
+        font-size: 1.5em;
+    }
+    .Banner h3{
+        font-size: 1em;
+    }
+
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .heading h2{
+        font-size: 24px;
+    }
+
+    .contentBox h3{
+        font-size: 20px;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .w50{
+        min-width: 50%;
+        margin-bottom: 20px;
+    }
+    .is_it_projects .content .is_it_projectsBox{
+        margin: 10px;
+    }
+    .Education .content .EducationBox{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact_info{
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 600px){
+
+    header, 
+    header.sticky{
+        padding: 20px 20px;
+       
+    }
+    .Banner{
+        padding: 150px 20px 100px;
+    }
+
+    section{
+        padding: 100px 20px;
+    }
+
+}

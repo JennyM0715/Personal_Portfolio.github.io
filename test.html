@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Send Mail</title> 
+<script src= "https://smtpjs.com/v3/smtp.js"> </script> 
+<style type="text/css">
+body{margin: 20px;}
+input{border:solid red;
+    height: 4vh;
+    border-radius: 25px 25px 25px 25px;
+    text-align: center;
+    margin-bottom: 10px;}
+form{border:solid 7px blue;
+    width: 50%;
+    height: 50%;
+    padding: 1%;
+    text-align: center;
+    background: #234a3a;
+    }
+    #Message{
+    width: 30vw;
+    height: 20vh;
+    word-break: break-all;
+    }
+</style>
+ </head>
+<body>
+<form method="post" name="Form">
+    <input type="text" name="" id="fullname" placeholder="Full Name" maxlength="40" required>
+    <input type="email" name="" id="mailaddr" placeholder="Email Address" maxlength="60" required>
+    <input type="text" name="" id="subject" placeholder="Subject" maxlength="60" required>
+    <textarea placeholder="Your Message Here..." id="message" maxlength="200" required></textarea>
+<input type="button" value="SendMessage" onclick ="sendMail()">
+</form>
+<script type="text/javascript">
+function sendMail() {
+        
+        var nameValue = document.getElementById("fullname").value;
+        var emailValue = document.getElementById("mailaddr").value;
+        var subjectValue = document.getElementById("subject").value;
+        var messageValue = document.getElementById("message").value;
+        var bodyValue = "<b>New message from: </b>";
+        bodyValue += nameValue;
+        bodyValue += "<br>";
+        bodyValue += "<b>Reply to: </b>"
+        bodyValue += emailValue;
+        bodyValue += "<br><br>";
+        bodyValue += messageValue;
+        Email.send({
+        SecureToken : "c9f65793-6f1a-403f-a226-7fe313f26849" ,
+        //Host : "smtp.gmail.com",
+       // Username : "",
+        //Password : "",
+        To : "mad.runner0715@gmail.com",
+        From : "mad.runner0715@gmail.com",
+        Subject : "subjectValue",
+        Body : "bodyValue"
+    }).then(
+    message => alert(message)
+    );
+    alert("message has been sent!");
+    
+}
+</script>
+</body>
+</html>

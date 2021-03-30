@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link id="favicon" rel="icon" title="Personal Portfolio" href="favicon-32x32.png" type="image/x-icon">
+        <title>
+            Personal Portfolio
+        </title>
+
+<!-- smtp.js -->
+<script src='https://smtpjs.com/v3/smtp.js'></script>
+
+
+
+
+        <!-----icons for CONTACT SECTION-------->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css"> 
+        
+    </head>
+    <body>
+        <!-----------------start of header----------------------------------------->
+        <header role="banner">
+            <a href="#" class="logo">Portfolio</a>
+            <!-----------------start of navigation--------------------------------->
+            <nav role="navigation" class="toggle_nav" onclick="toggle_Menu()">
+                <ul class="menu">
+                    <li>
+                        <a href="#Home" title="Home">Home</a></li>
+                    <li>
+                        <a href="#About" title="About">About</a></li>
+                    <li>
+                        <a href="#is_it_projects" title="IS/IT Projects">IS/IT Projects</a></li>
+                    <li>
+                        <a href="#Education" title="Education">Education</a></li>
+                    <li>
+                        <a href="#ContactMe" title="Contact">Contact</a></li>
+                    <li>
+                        <a href="Jennifer_Martinez.pdf" title="Download Resume" download>Download Resume</a></li>
+                </ul>
+            </nav>
+            <!-----------------end of navigation--------------------------------->
+        </header>
+        <!-----------------end of header----------------------------------------->
+
+        <!-----------------start of Banner (introduction)------------------------>
+        <section role="region" class="Banner" id="Home">
+            <div class="textbox">
+                <h2>Hello, my name is <br><span>Jennifer Martinez.</span></h2>
+                <!---<h3>I'm a Front End Web Developer.</h3>----->
+                <a href="#About" class="btn">About Me</a>
+            </div>
+        </section>
+        <!-----------------end of Banner (introduction)------------------------->
+
+        <!-----------------start of About Me------------------------------------>
+        <section role="region" class="About" id="About">
+            <div class="heading">
+                <h2>About Me</h2>
+            </div>
+
+            <div class="content">
+                <div class="contentBox w50">
+                    <h3>Front-End Web Developer</h3>
+                    <p>I use a combination of languages (HTML, CSS, Javascript, and JQuery) to write web pages. I am interested in gaining more experience and knowledge on creating visual elements that users can see and interact with in a web application. I have been introduced to the Vue.js framework and would continue to use this framework to gain more famiiarity. I have also used a control version, Git, to push my source code from my localhost machine to a GitHub repository. I am also familair with VeeValidate, BootstrapVue, Bootstrap, Toast, Glitch, TravisCI, and GitHub.
+                    <br><br>Aside from work interest, I like to spend my free time decompressing. Activities, such as listening to music, going to  a movie theater, walking on trails, trying out new foods, playing video games, sleeping in, watching NFL football, playing Pokémon Trading Card Game, and etc. </p>
+                </div>
+                <div class="w50">
+                    <img src="About_me_image.jpg" class="img" alt="About Me Image">
+                </div>
+            </div>
+        </section>
+        <!-----------------end of About Me--------------------------------------->
+
+        <!-----------------start of IS/IT Projects------------------------------->
+        <section role="region" class="is_it_projects" id="is_it_projects">
+            <div class="heading white">
+                <h2>My Projects</h2>
+                <p>Here are a few projects I have done in regrds to Computer Information Technology and Front-End Web Development.</p>
+            </div>
+
+            <div class="content">
+                <div class="is_it_projectsBox">
+                    <!---<img src="https://www.flaticon.com/svg/vstatic/svg/1005/1005141.svg?token=exp=1617052441~hmac=ff87108044278361699ebe68d3d98b8a" alt="Icon one">--->
+                    <img src="RottenPotatoes.PNG" alt="RottenPotatoes">
+                    <h2>RottenPotatoes (In-Progress)</h2>
+                    <p>Led a team of 7 members to create a Video Game Review website that has user log in system, a database, security policies and frameworks implemented, and hosted through Amazon Web Services (AWS) so that any individual can access and browse through. For CIT480 & 481 Senior Design (FALL 2020 & SPRING 2021).
+                    </p>
+                </div>
+
+                <div class="is_it_projectsBox">
+                    <a href="https://github.com/JennyM0715/JaneAddamsTribute.github.io" target="_blank" title="Jane Addams"><img src="JaneAddams.PNG" alt="Jane Addams"></a>
+                    <h2>Jane Addams </h2>
+                    <p>Created a small tribute page to Jane Addams since it was Women's History Month ( March 2021) using HTML and CSS.</p>
+                </div>
+                
+                <div class="is_it_projectsBox">
+                    <a href="" title="Netflix---Clone"><img src="netflix-clone.PNG" alt="Netflix--Clone"></a>
+                    <h2>Netflix--Clone</h2>
+                    <p>A static page of the Netflix page before a user signs up or logs in. This was for educational purposes only to try out new visuals. </p>
+                </div>
+
+                <div class="is_it_projectsBox">
+                    <a href="https://github.com/JennyM0715/CIT384_Final_Project" target="_blank" title="Mexicanology"><img src="mexicanology.PNG" alt="Mexicanology"></a>
+                    <h2>Mexicanology</h2>
+                    <p>Created a web application using a JavaScript framework/library and used a web hosting service to display the live demonstration of the web application. For CIT384/L (FALL 2020) Final Project. </p>
+                </div>
+
+
+                <div class="is_it_projectsBox">
+                    <a href="https://github.com/JennyM0715/Tamagotchi_Pokemon_Edition" target="_blank" title="Tamagotchi Pokemon Edition"><img src="Tamagotchi_Pokemon_Edition.PNG" alt="Tamagotchi Pokemon Edition"></a>
+                    <h2>Tamagotchi Pokemon Edition</h2>
+                    <p>Created a Tamagotchi Pokemon Edition Game using HTML, CSS, and JQuery. For CIT384/L (FALL 2020).</p>
+                </div>
+
+
+                <div class="is_it_projectsBox">
+                    <a href="https://github.com/JennyM0715/JennyM0715.github.io_CSUN_MAP_QUIZ" target="_blank" title="CSUN Map Quiz"><img src="csun_map_quiz.PNG" alt="CSUN Map Quiz"></a>
+                    <h2>CSUN Map Quiz</h2>
+                    <p>Created a CSUN Map Quiz using Google Maps API, HTML, CSS, and JavaScript.For CIT384/L (FALL 2020).</p>
+                </div>
+                <div class="heading">
+                    <a href="https://github.com/JennyM0715?tab=repositories" target="_blank" class="btn">See More</a>
+                 </div>
+            </div>
+        </section>
+        <!-----------------end of IS/IT Projects-------------------------------->
+
+        <!-----------------start of education---------------------------------------->
+        <section role="region" class="Education" id="Education">
+            <div class="heading">
+                <h2>Education</h2>
+            </div>
+
+            <div class="content">
+                <div class="EducationBox">
+                    <img src="CSUNS.png" alt="California State University, Northridge">
+                    <h2>California State University, Northridge (May 2021)</h2>
+                    <p>B.S in Computer Information Technology <br>
+                        Minor in Recreation Management</p> <br><br>
+                    <p>Overall GPA: 3.5| Major GPA: 3.3 | Dean’s List: 3 semesters</p>
+                </div>
+
+                <div class="EducationBox">
+                    <img src="Eagle_Rock_logo.png" alt="Icon two">
+                    <h2>Eagle Rock Jr./Sr. High School (June 2016)</h2>
+                    <p>High School Diploma</p><br><br>
+                    <p>Overall GPA: 3.75 | Honors (Scholar-athlete)
+                        </p>
+                </div>
+            </div>
+           
+
+        </section>
+        <!-----------------end- of education---------------------------------------->
+
+        <!-----------------start- of Contact----------------------------------->
+        <section role="region" class="Contact" id="ContactMe">
+          <div class="heading white">
+            <h2>Contact Me</h2>
+            <p>Fill free to contact me by filling out this form here.</p>
+          </div>
+          <div class="content">
+            <div class="contact_info">
+                <h3>Contact Info</h3>
+                <div class="contact_infoBox">
+                    <!---<div class="Box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>9999 Random Road, <br> Los Ageles, California, <br>91260</p>
+                        </div>
+                    </div>---->
+                    <div class="Box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>(323) 479 - 4459</p>
+                        </div>
+                    </div>
+                    <div class="Box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>JenniferMartinez0715@yahoo.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form" method="POST" action="#">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" name="" placeholder="Full Name" maxlength="40" required>
+                    <input type="email" name="" placeholder="Email Address" maxlength="60" required>
+                    <textarea placeholder="Your Message Here..." maxlength="200" required></textarea>
+                    <input type="submit" value="Send" onclick="sendEmail()">
+                </form>
+            </div>
+          </div>
+        </section>
+        <!-----------------end- of Contact------------------------------------->
+
+        <!-----------------start- of Footer------------------------------------>
+        <footer role="contentinfo">
+        <div class="copyright">
+            <p>Copyright &copy; 2021 Jennifer Martinez. All Rights Reserved. </p>
+        
+
+            <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
+        </footer>
+        <!-----------------start- of JAVASCRIPT TYPING----------------------------------->
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                var header = document.querySelector('header'); /*<header> tag*/
+                    /*inside <header> tag, class name is "sticky" when user scrolls down*/
+                    header.classList.toggle('sticky', window.scrollY > 0);
+            });
+
+            function toggle_Menu(){
+                var menuToggle = document.querySelector('.toggle_nav');
+                var menu = document.querySelector('.menu');
+                menuToggle.classList.toggle('active');
+                menu.classList.toggle('active');
+            }
+
+            function sendEmail() {
+                    var nameValue = document.getElementById("fullname").value;
+                    var emailValue = document.getElementById("mailaddr").value;
+                    var subjectValue = document.getElementById("subject").value;
+                    var messageValue = document.getElementById("message").value;
+                    var bodyValue = "<b>New message from: </b>";
+                    bodyValue += nameValue;
+                    bodyValue += "<br>";
+                    bodyValue += "<b>Reply to: </b>"
+                    bodyValue += emailValue;
+                    bodyValue += "<br><br>";
+                    bodyValue += messageValue;
+                    Email.send({
+                    SecureToken : "c9f65793-6f1a-403f-a226-7fe313f26849" ,
+                    //Host : "smtp.gmail.com",
+                    // Username : "",
+                    //Password : "",
+                    To : "mad.runner0715@gmail.com",
+                    From : "mad.runner0715@gmail.com",
+                    Subject : "subjectValue",
+                    Body : "bodyValue"
+                }).then(
+                message => alert(message)
+                );
+                alert("message has been sent!");
+            }
+
+
+
+
+            
+            
+        </script>
+        <!-----------------END- of JAVASCRIPT TYPING----------------------------------->
+    </body>
+</html>
