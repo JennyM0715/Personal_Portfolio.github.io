@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
-        <link id="favicon" rel="icon" title="Personal Portfolio" href="favicon-32x32.png" type="image/x-icon">
+        <link id="favicon" rel="icon" title="Personal Portfolio" href="images/favicon-32x32.png" type="image/x-icon">
         <title>
             Personal Portfolio
         </title>
@@ -67,7 +67,7 @@
                     <br><br>Aside from work interest, I like to spend my free time decompressing. Activities, such as listening to music, going to  a movie theater, walking on trails, trying out new foods, playing video games, sleeping in, watching NFL football, playing Pokémon Trading Card Game, and etc. </p>
                 </div>
                 <div class="w50">
-                    <img src="About_me_image.jpg" class="img" alt="About Me Image">
+                    <img src="images/About_me_image.jpg" class="img" alt="About Me Image">
                 </div>
             </div>
         </section>
@@ -83,7 +83,7 @@
             <div class="content">
                 <div class="is_it_projectsBox">
                     <!---<img src="https://www.flaticon.com/svg/vstatic/svg/1005/1005141.svg?token=exp=1617052441~hmac=ff87108044278361699ebe68d3d98b8a" alt="Icon one">--->
-                    <img src="RottenPotatoes.PNG" alt="RottenPotatoes">
+                    <img src="images/RottenPotatoes.PNG" alt="RottenPotatoes">
                     <h2>RottenPotatoes (In-Progress)</h2>
                     <p>Led a team of 7 members to create a Video Game Review website that has user log in system, a database, security policies and frameworks implemented, and hosted through Amazon Web Services (AWS) so that any individual can access and browse through. For CIT480 & 481 Senior Design (FALL 2020 & SPRING 2021).
                     </p>
@@ -96,27 +96,27 @@
                 </div>
                 
                 <div class="is_it_projectsBox">
-                    <a href="" title="Netflix---Clone"><img src="netflix-clone.PNG" alt="Netflix--Clone"></a>
+                    <a href="" title="Netflix---Clone"><img src="images/netflix-clone.PNG" alt="Netflix--Clone"></a>
                     <h2>Netflix--Clone</h2>
                     <p>A static page of the Netflix page before a user signs up or logs in. This was for educational purposes only to try out new visuals. </p>
                 </div>
 
                 <div class="is_it_projectsBox">
-                    <a href="https://github.com/JennyM0715/CIT384_Final_Project" target="_blank" title="Mexicanology"><img src="mexicanology.PNG" alt="Mexicanology"></a>
+                    <a href="https://github.com/JennyM0715/CIT384_Final_Project" target="_blank" title="Mexicanology"><img src="images/mexicanology.PNG" alt="Mexicanology"></a>
                     <h2>Mexicanology</h2>
                     <p>Created a web application using a JavaScript framework/library and used a web hosting service to display the live demonstration of the web application. For CIT384/L (FALL 2020) Final Project. </p>
                 </div>
 
 
                 <div class="is_it_projectsBox">
-                    <a href="https://github.com/JennyM0715/Tamagotchi_Pokemon_Edition" target="_blank" title="Tamagotchi Pokemon Edition"><img src="Tamagotchi_Pokemon_Edition.PNG" alt="Tamagotchi Pokemon Edition"></a>
+                    <a href="https://github.com/JennyM0715/Tamagotchi_Pokemon_Edition" target="_blank" title="Tamagotchi Pokemon Edition"><img src="images/Tamagotchi_Pokemon_Edition.PNG" alt="Tamagotchi Pokemon Edition"></a>
                     <h2>Tamagotchi Pokemon Edition</h2>
                     <p>Created a Tamagotchi Pokemon Edition Game using HTML, CSS, and JQuery. For CIT384/L (FALL 2020).</p>
                 </div>
 
 
                 <div class="is_it_projectsBox">
-                    <a href="https://github.com/JennyM0715/JennyM0715.github.io_CSUN_MAP_QUIZ" target="_blank" title="CSUN Map Quiz"><img src="csun_map_quiz.PNG" alt="CSUN Map Quiz"></a>
+                    <a href="https://github.com/JennyM0715/JennyM0715.github.io_CSUN_MAP_QUIZ" target="_blank" title="CSUN Map Quiz"><img src="images/csun_map_quiz.PNG" alt="CSUN Map Quiz"></a>
                     <h2>CSUN Map Quiz</h2>
                     <p>Created a CSUN Map Quiz using Google Maps API, HTML, CSS, and JavaScript.For CIT384/L (FALL 2020).</p>
                 </div>
@@ -135,7 +135,7 @@
 
             <div class="content">
                 <div class="EducationBox">
-                    <img src="CSUNS.png" alt="California State University, Northridge">
+                    <img src="images/CSUNS.png" alt="California State University, Northridge">
                     <h2>California State University, Northridge (May 2021)</h2>
                     <p>B.S in Computer Information Technology <br>
                         Minor in Recreation Management</p> <br><br>
@@ -143,7 +143,7 @@
                 </div>
 
                 <div class="EducationBox">
-                    <img src="Eagle_Rock_logo.png" alt="Icon two">
+                    <img src="images/Eagle_Rock_logo.png" alt="Icon two">
                     <h2>Eagle Rock Jr./Sr. High School (June 2016)</h2>
                     <p>High School Diploma</p><br><br>
                     <p>Overall GPA: 3.75 | Honors (Scholar-athlete)
@@ -200,7 +200,7 @@
                     <input type="text" name="" placeholder="Full Name" maxlength="40" required>
                     <input type="email" name="" placeholder="Email Address" maxlength="60" required>
                     <textarea placeholder="Your Message Here..." maxlength="200" required></textarea>
-                    <input type="submit" value="Send" onclick="sendEmail()">
+                    <input type="submit" value="Send">
                 </form>
             </div>
           </div>
@@ -231,37 +231,6 @@
                 menu.classList.toggle('active');
             }
 
-            function sendEmail() {
-                    var nameValue = document.getElementById("fullname").value;
-                    var emailValue = document.getElementById("mailaddr").value;
-                    var subjectValue = document.getElementById("subject").value;
-                    var messageValue = document.getElementById("message").value;
-                    var bodyValue = "<b>New message from: </b>";
-                    bodyValue += nameValue;
-                    bodyValue += "<br>";
-                    bodyValue += "<b>Reply to: </b>"
-                    bodyValue += emailValue;
-                    bodyValue += "<br><br>";
-                    bodyValue += messageValue;
-                    Email.send({
-                    SecureToken : "aeb7d9d4-b809-4951-8ef4-f93df0073efe" ,
-                    //Host : "smtp.gmail.com",
-                    // Username : "",
-                    //Password : "",
-                    To : "mad.runner0715@gmail.com",
-                    From : "mad.runner0715@gmail.com",
-                    Subject : "subjectValue",
-                    Body : "bodyValue"
-                }).then(
-                message => alert(message)
-                );
-                alert("message has been sent!");
-            }
-
-
-
-
-            
             
         </script>
         <!-----------------END- of JAVASCRIPT TYPING----------------------------------->
