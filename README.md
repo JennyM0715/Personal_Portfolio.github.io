@@ -1,4 +1,4 @@
-# JennyM0715.github.io
+# Summary
 Created a Personal Portfolio website using HTML, CSS, and a little bit of JavaScript
 
 # Technologies and applications used
@@ -11,4 +11,10 @@ Created a Personal Portfolio website using HTML, CSS, and a little bit of JavaSc
 * [Pexels](https://www.pexels.com/)
 * [Flaticon ](www.flaticon.com)
 * [Google Fonts](https://fonts.google.com/)
+
+
+# Output 
+
+    * Browse through Personal Portfolio on this link
+*[Personal Portfolio](https://jennym0715.github.io/Personal_Portfolio.github.io/)
 
