@@ -388,6 +388,11 @@ header.sticky ul li a{
     margin-bottom: 0;
 }
 
+#out_of_commision_contacts,
+#contact_info_alt_text{
+    color:red;
+}
+
 /******************************************
 *
 *
